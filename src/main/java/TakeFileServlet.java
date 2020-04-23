@@ -17,7 +17,7 @@ public class TakeFileServlet extends HttpServlet {
     static final int fileMaxSize = 500000 * 1024;
     static final int memMaxSize = 500 * 1024;
     static int lastByte;
-    ZipOutputStream zout = new ZipOutputStream(new FileOutputStream("/home/maxvkamkin/test/test2/output.zip"));
+    ZipOutputStream zout = new ZipOutputStream(new FileOutputStream("/home/maxvkamkin/prog/java/javapro/PRO3/src/main/webapp/output.zip"));
 
 
 
@@ -73,7 +73,7 @@ public class TakeFileServlet extends HttpServlet {
                 }
             }
             zout.close();
-            writer.println("<h1><a href=\"/home/maxvkamkin/test/test2/output.zip\">Take your arch.</a></h1>");
+            writer.println("<h1><a href=\"output.zip\">Take your arch.</a></h1>");
             writer.println("</body>" +
                     "</html>");
         } catch (Exception e) {
